@@ -1,0 +1,6 @@
+fastapi>=0.115
+uvicorn>=0.30
+websockets>=12  # uvicorn needs a WebSocket library, or /ws returns 404
+psutil>=5.9
+nvidia-ml-py>=11.5
+pydantic>=2.7

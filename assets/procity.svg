@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="12" fill="#080b12"/>
+  <g stroke-width="1.6" stroke-linejoin="round">
+    <rect x="8" y="34" width="9" height="20" fill="#101a2b" stroke="#00a6ff"/>
+    <rect x="20" y="18" width="10" height="36" fill="#101a2b" stroke="#00f0ff"/>
+    <rect x="33" y="26" width="9" height="28" fill="#101a2b" stroke="#8b5cf6"/>
+    <rect x="45" y="12" width="11" height="42" fill="#101a2b" stroke="#ff8a3d"/>
+  </g>
+  <g fill="#00f0ff" opacity="0.85">
+    <rect x="23" y="23" width="2" height="2"/><rect x="26" y="23" width="2" height="2"/>
+    <rect x="23" y="29" width="2" height="2"/><rect x="26" y="35" width="2" height="2"/>
+  </g>
+  <g fill="#ff8a3d" opacity="0.9">
+    <rect x="48" y="17" width="2" height="2"/><rect x="51" y="17" width="2" height="2"/>
+    <rect x="48" y="24" width="2" height="2"/><rect x="51" y="31" width="2" height="2"/>
+    <rect x="48" y="38" width="2" height="2"/>
+  </g>
+  <line x1="5" y1="54.5" x2="59" y2="54.5" stroke="#00a6ff" stroke-width="1.2" opacity="0.6"/>
+</svg>

@@ -1,0 +1,26 @@
+name: Release
+
+# Push a tag like v1.0.0 to publish a GitHub release with the prebuilt UI,
+# so users on any distro only need Python to install.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: scripts/package.sh
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" release/*.tar.gz release/SHA256SUMS \
+            --title "PROCity $GITHUB_REF_NAME" --generate-notes

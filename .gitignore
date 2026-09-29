@@ -1,0 +1,14 @@
+# Python
+backend/.venv*
+**/__pycache__/
+**/.pytest_cache/
+
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Misc
+*.log
+.DS_Store
+release/
